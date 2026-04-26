@@ -1,4 +1,4 @@
-package org.quarkus;
+package org.quarkus.api;
 
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;

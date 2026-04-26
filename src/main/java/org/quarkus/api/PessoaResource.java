@@ -1,4 +1,4 @@
-package org.quarkus;
+package org.quarkus.api;
 
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;
@@ -10,6 +10,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.QueryParam;
 import jakarta.ws.rs.core.MediaType;
+import org.quarkus.model.Pessoa;
 
 import java.util.List;
 

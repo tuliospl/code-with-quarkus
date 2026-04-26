@@ -1,4 +1,4 @@
-package org.quarkus;
+package org.quarkus.api.healthcheck;
 
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;
