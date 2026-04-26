@@ -23,7 +23,7 @@ public interface StarWarsService {
     @Fallback(fallbackMethod = "getStarshipFallback")
     @CircuitBreaker(
         requestVolumeThreshold = 2,
-        failureRatio = 5,
+        failureRatio = 0.5,
         delay = 3000L,
         successThreshold = 2
     )
