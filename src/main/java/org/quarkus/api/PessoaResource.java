@@ -1,5 +1,6 @@
 package org.quarkus.api;
 
+import io.micrometer.core.annotation.Counted;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.DELETE;
@@ -20,6 +21,7 @@ import java.util.List;
 public class PessoaResource {
 
     @GET
+    @Counted(description = "getPessoa")
     public List<Pessoa> getPessoa() {
         return Pessoa.listAll();
     }
